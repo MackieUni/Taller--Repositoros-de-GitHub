@@ -244,7 +244,7 @@ def update_output_div(date, hour, proy):
         initial_date = date + " " + hour + ":" + minute
         initial_date = pd.to_datetime(initial_date, format="%Y-%m-%d %H:%M")
 
-        # Graficar
+        # Graficar con detalles 
         plot = plot_series(data, initial_date, int(proy))
         return plot
 
